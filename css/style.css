@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+*{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    height: 1000px;
+    padding: 0;
+    background-image: linear-gradient( 109.6deg,  rgba(245,239,249,1) 30.1%, rgba(207,211,236,1) 100.2% );
+
+}
+
+.hr{
+    width: 80px;
+    height: 1px;
+    background-color: #4d4dff;
+    border: 1px solid #14A58C;
+}
+.mrlr{
+   margin-left: 5px;
+    margin-right: 5px;
+}
+.overlay{
+    background-image: linear-gradient( 179.6deg,  rgba(0,19,26,0.6) -4.9%, rgba(0,77,105,0.6) 108.4% );    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/*start navbar*/
+nav{
+    width: 80%;
+    margin: 35px auto;
+    border-bottom: 2px solid #4c495e;
+    border-radius: 9px 98px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(75,108,183,1) 0%, rgba(55,82,141,1) 90% );
+    transition: all 1s ease-in-out;
+}
+nav .navbar-toggler{
+        background-image: linear-gradient( 109.6deg,  rgba(119,44,232,0.68) 11.5%, rgba(119,44,232,1) 91.2% );
+        border-radius: 0px;
+}
+nav .navbar-nav .nav-item .nav-link{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 992px) {
+ nav .navbar-nav .nav-item .nav-link {
+    margin-bottom: 8px;
+  }
+}
+
+nav.black{
+    margin: 0;
+    width: 100%;
+    border-radius: 0px;
+background-image: linear-gradient( 109.6deg,  rgba(0,182,255,1) 11.2%, rgba(102,51,153,1) 91.1% );    filter: opacity(0.85);
+}
+nav.black .navbar-nav .nav-item .nav-link{
+    transition: all .5s ease-in-out;
+}
+nav.black .navbar-nav .active .nav-link,nav.black .navbar-nav .nav-item .nav-link:hover{
+    border-radius: 0;
+        transition-delay: 1s;
+
+    
+    
+}
+nav.black .navbar-nav .nav-item .nav-link:hover{
+    transform:  matrix( 1.2, 0, 0, 1.2, 0, 0 ) ;
+}
+nav .navbar-nav .active .nav-link,nav .navbar-nav .nav-item .nav-link:hover{
+    background-image: linear-gradient( 109.6deg,  rgba(119,44,232,0.68) 11.5%, rgba(119,44,232,1) 91.2% );
+    border-radius: 28px 169px;
+    padding-left: 12px;
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+/*start header*/
+header{
+    background-size: cover;
+    transition: all  .5s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    position: relative;
+    animation: replace 20s infinite;
+
+}
+@keyframes replace{
+    0%{
+               background: url(../img/header/julian-ohayon-01.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+
+    }
+    20%{
+         background: url(../img/header/1.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+    }
+    20.01%{
+               background: url(../img/header/1.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+
+    }
+    40%{
+         background: url(../img/header/2.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+    }
+    40.01%{
+               background: url(../img/header/2.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+
+    }
+    60%{
+         background: url(../img/header/3.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+    }
+    60.01%{
+               background: url(../img/header/3.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+
+    }
+    80%{
+         background: url(../img/header/4.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+    }
+    80.01%{
+               background: url(../img/header/4.jpg)  center no-repeat fixed;
+            background-size: cover;
+
+
+    }
+    100%{
+         background: url(../img/header/julian-ohayon-01.jpg)  center no-repeat fixed;
+            background-size: cover;
+    }
+    
+}
+
+header .overlay{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    
+  
+}
+header  h1{
+   color:#fff;
+   font-size: 60px;
+    margin: auto;
+    font-weight: 700;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+header p{
+    margin: auto;
+    max-width: 50%;
+    color:
+    #fff;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    font-style: italic;
+    margin-bottom: 10px;
+    
+    
+    
+}
+header a{
+    text-decoration: none;
+    color:
+    #fff;
+    margin: 30px 0 0;
+    display: inline-block;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(75,108,183,1) 0%, rgba(55,82,141,1) 90% );
+    padding: 13px 80px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    border-radius: 9px 98px;
+    transition: all 2s ease-in-out;
+    box-shadow: 0px 3px 5px 0 #000, 1px 2px 5px 1px #eee,1px 3px 5px 0px #fff;
+}
+header a:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: rotate(360deg);
+background-image: linear-gradient( 109.6deg,  rgba(0,182,255,1) 11.2%, rgba(102,51,153,1) 91.1% );}
+/*strat about-us*/
+.about-us{
+    padding: 110px 0;
+    background-image: linear-gradient( 109.6deg,  rgba(245,239,249,1) 30.1%, rgba(207,211,236,1) 100.2% );
+}
+.about-us h2{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-us .cardo {
+    position: relative;
+   
+}
+.about-us .cardo .face{
+    transition: .5s;
+}
+.about-us .cardo .face.face1{
+    position: relative;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1;
+    transform: translateY(100px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.about-us .cardo:hover .face.face1{
+    margin-bottom: 50px;
+    transform: translateY(0px);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(75,108,183,1) 0%, rgba(55,82,141,1) 90% );
+    margin-bottom: 100px;
+}
+
+
+.about-us .cardo .face.face1 .content h3{
+    color: #fff;
+}
+.about-us .cardo .face.face2{
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(0, 0 ,0 ,0.8);
+    transform: translateY(-100px);
+    
+}
+.about-us .cardo .face.face2 a{
+    transition: all .5s ease-in-out;
+    margin-top: 5px;
+}
+.about-us .cardo .face.face2 a:hover{
+     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(75,108,183,1) 0%, rgba(55,82,141,1) 90% );
+    color: #fff;
+}
+.about-us .cardo p{
+    font-size: 1rem;
+}
+/*fixed-img*/
+.fixed-img{
+    background: url(../img/fixed-img/329ac952831125.591e0c4ecab4b.jpg) fixed no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+}
+/*statr ourteam*/
+.ourteam{
+    padding: 110px 0;
+     background-image: linear-gradient( 109.6deg,  rgba(245,239,249,1) 30.1%, rgba(207,211,236,1) 100.2% );
+    box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    font-family: 'Yeon Sung', cursive;
+}
+.ourteam .flibing-cards {
+    padding: 20px 0;
+    
+}
+.ourteam .flibing-cards .card{
+    width: 330px;
+    height: 420px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    border: none;
+        box-shadow: 0px 20px 50px rgba(0, 0 ,0 ,0.8);
+
+     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,199,199,1) 0%, rgba(181,188,243,1) 99.3% );
+}
+.ourteam .flibing-cards .middele{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.ourteam .flibing-cards .card .front, .ourteam .flibing-cards .card .back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    border-radius: 13px;
+
+}
+.ourteam .flibing-cards .card .front img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+}
+.ourteam .flibing-cards .card .front{
+        transform: perspective(600px) rotateY(0deg);
+
+}
+.ourteam .flibing-cards .card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+    
+}
+.ourteam .flibing-cards .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+.ourteam .flibing-cards .card .back{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(75,108,183,1) 0%, rgba(55,82,141,1) 90% );   
+
+    transform: perspective(600px) rotateY(180deg);
+}
+.ourteam .flibing-cards .card .back .back-content{
+    width: 100%;
+    color: #fff;
+}
+.ourteam .flibing-cards .card .back .back-content .sm{
+    margin: 20px 0;
+}
+.ourteam .flibing-cards .card .back .back-content .sm a{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(1){ color: #3B5999;}
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(1):hover{color: #fff; background-color:#3B5999; }
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(2){ color: #0077B5;}
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(2):hover{color: #fff; background-color:#0077B5; }
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(3){ color: #dd4b39}
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(3):hover{color: #fff; background-color:#dd4b39 }
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(4){ color: #55acee;}
+.ourteam .flibing-cards .card .back .back-content .sm a:nth-child(4):hover{color: #fff; background-color:#55acee; }
+/*start portfolio*/
+.portfolio{
+    padding: 110px;
+    background-image: linear-gradient( 1.3deg,  rgba(91,117,163,1) 11.4%, rgba(68,98,128,1) 77% );
+    box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    font-family: 'Yeon Sung', cursive;
+    
+}
+.portfolio article{
+    color: #f3f3f3;
+}
+.portfolio .flex-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .card{
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+}
+.portfolio .card img{
+    height: 100%;
+}
+
+ .portfolio .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+ .portfolio .swiper-slide {
+      
+      width: 400px;
+      
+    }
+
+   
+    
+/*strat ourskilles*/
+.ourskilles{
+    padding: 110px 0;
+    font-family: 'Roboto', sans-serif;
+     background-image: linear-gradient( 109.6deg,  rgba(245,239,249,1) 30.1%, rgba(207,211,236,1) 100.2% );
+    
+}
+.ourskilles h1,.ourskilles p{
+    color: #666;
+    
+}
+.ourskilles .progres{
+    padding: 50px 0;
+}
+.ourskilles  .progres .skilles-progress-bar{
+    box-shadow: 0px 20px 50px #000008;
+    background-image: linear-gradient( 109.6deg,  rgba(20,30,48,1) 11.2%, rgba(36,59,85,1) 91.1% );
+    padding: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourskilles  .progres .skilles-progress-bar .number{
+    position: relative;
+    
+}
+.ourskilles  .progres .skilles-progress-bar h3{
+    color: #f2f2dd;
+}
+.ourskilles  .progres .skilles-progress-bar .number h2{
+    transform: translate(0%,-243%);
+    font-size: 30px;
+    color: #fff;
+}
+.ourskilles  .progres svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+.ourskilles .progres svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px ,5px);
+}
+.ourskilles .progres svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+background-color: aqua
+}
+.ourskilles .progres .skilles-progress-bar:nth-child(1) .svg-one circle:nth-child(2){
+    stroke-dashoffset: 44;
+    stroke: #00ff43;
+
+}
+.ourskilles .progres .skilles-progress-bar:nth-child(1) .svg-two circle:nth-child(2){
+    stroke-dashoffset: 66;
+    stroke: #4A0082;
+
+}
+.ourskilles .progres .skilles-progress-bar:nth-child(1) .svg-three circle:nth-child(2){
+    stroke-dashoffset: 132;
+    stroke: #36403D;
+
+}
+.ourskilles .progres .skilles-progress-bar:nth-child(1) .svg-four circle:nth-child(2){
+    stroke-dashoffset: 22;
+    stroke: #F12815;
+
+}
+/*start contanet*/
+.contanet{
+    padding: 110px;
+      background-image: linear-gradient( 1.3deg,  rgba(91,117,163,1) 11.4%, rgba(68,98,128,1) 77% );
+
+    box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    
+}
+.contanet form{
+
+    background-image: linear-gradient( 109.6deg,  rgba(20,30,48,1) 11.2%, rgba(36,59,85,1) 91.1% );
+    padding: 50px;
+    box-shadow: 0px 20px 50px 1px black;
+
+    
+}
+/*strat footer*/
+
+footer{
+    padding: 10px 0;
+    background-image: linear-gradient( 109.6deg,  rgba(20,30,48,1) 11.2%, rgba(36,59,85,1) 91.1% );
+        box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 1);
+
+}
+footer .sm{
+    margin: 20px 0;
+}
+footer .sm a{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+footer .sm a:nth-child(1){ color: #3B5999;}
+footer .sm a:nth-child(1):hover{color: #fff; background-color:#3B5999; }
+footer .sm a:nth-child(2){ color: #0077B5;}
+footer .sm a:nth-child(2):hover{color: #fff; background-color:#0077B5; }
+footer .sm a:nth-child(3){ color: #dd4b39}
+footer .sm a:nth-child(3):hover{color: #fff; background-color:#dd4b39 }
+footer .sm a:nth-child(4){ color: #55acee;}
+footer .sm a:nth-child(4):hover{color: #fff; background-color:#55acee; }
+
+
+
+
+
